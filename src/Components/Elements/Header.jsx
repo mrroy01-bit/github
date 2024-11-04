@@ -30,24 +30,26 @@ function Header() {
                         <a href="#" className="text-white hover:text-gray-300 Product  pl-3 pr-3 pt-5 pb-5">Product</a>
                         {activeMenu === 'product' && (
 
-                            <ul className="absolute top-full left-0 mt-2 bg-white p-4 shadow-lg w-[300px]">
+                            <ul className="absolute top-full left-0 mt-2 bg-white p-4 shadow-lg w-[500px] rounded-md">
 
                                 <li className="Submenu py-2 pt-6">
                                     <div className='flex font-medium'>
                                         <SiGithubcopilot className='text-slate-500 text-4xl pt-3' />
                                         <span className='tracking-normal font-normal leading-normal me-menu'>
                                         <a href="#" className="text-black font-semibold hover:text-gray-300 block mb-1 pl-3 text-base pb-1 leading-normal">GitHub Copilot</a>
-                                        <p className="text-gray-400 text-sm leading-normal pl-3">Write better code with Al</p>
+                                         <p className="text-gray-400 text-sm leading-normal pl-3">Write better code with Al</p>
                                     </span>
                                     </div>
                                 </li>
 
                                 <li className="Submenu py-2 ">
-                                    <span className='flex font-medium'>
-                                        <MdSecurity className='text-slate-500 text-2xl' />
-                                        <a href="#" className="text-black hover:text-gray-300 block mb-2 pl-3">Security</a>
-                                    </span>
-                                    <p className="text-gray-400 text-sm">Find and fix vulnerabilities</p>
+                                    <div className='flex font-medium'>
+                                        <MdSecurity className='text-slate-500 text-4xl pt-3' />
+                                        <span className='tracking-normal font-normal leading-normal me-menu'>
+                                        <a href="#" className="text-black hover:text-gray-300 font-semibold block mb-1 pl-3  text-base pb-1 leading-normal">Security</a>
+                                        <p className="text-gray-400 text-sm leading-normal pl-3">Find and fix vulnerabilities</p>
+                                     </span>
+                                    </div>
                                 </li>
 
                                 <li className="Submenu py-2 ">

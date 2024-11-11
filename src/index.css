@@ -2,16 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
- margin: 0;
- padding: 0;
-}
-#Home{
-    background: rgb(88,71,186);
-background: radial-gradient(circle, rgba(88,71,186,0.947391456582633) 0%, rgba(10,12,77,1) 71%, rgba(8,10,65,1) 100%);
-    margin: 0;
-    padding: 0;
-}
+
 .me-menu{
     line-height: 10px;
     letter-spacing: normal;
@@ -22,10 +13,9 @@ background: radial-gradient(circle, rgba(88,71,186,0.947391456582633) 0%, rgba(1
     font-size: 16px;
     line-height: 24px;
 }
-.video{
+.toggle-video{
     width: 97%;
-    height: 800px;
-    background-color: red;
+    height: 690px;
     margin-left: 20px;
     border-top: 20px solid #8272C5;
     border-left: 20px solid #8272C5;
@@ -33,19 +23,7 @@ background: radial-gradient(circle, rgba(88,71,186,0.947391456582633) 0%, rgba(1
     border-top-left-radius: 20px;
     border-top-right-radius:20px;
 }
-.btn{
-    background-color: #101229;
-    margin-top: 30px;
-    border: 2px solid  #4f505e;
 
-    width: 700px;
-    margin-left: 50vh;
-    padding: 8px;
-    border-radius: 30px;
-}
 
-.btn-toggle{
-    background-color: #d4d5e8;
-    font-weight: 600;
-    border-radius: 30px;
-}
+
+

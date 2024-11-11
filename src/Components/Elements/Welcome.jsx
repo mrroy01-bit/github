@@ -2,7 +2,7 @@
 function Welcome() {
   return (
     <>
-    <div className="text-center mt-10 justify-center mb-10">
+    <div className="text-center mt-10 justify-center pb-10">
       <h1 className="text-[4rem] tracking-[-0.03em] leading-tight	 font-bold mb-4 text-white">Build and ship software on a <br /> single, collaborative platform</h1>
       <p className="text-[1.125rem] mb-8 mt-9 text-white">Join the world’s most widely adopted AI-powered developer platform <br /> where millions of developers, businesses, and the largest open source <br /> community build software that advances humanity.</p>
       <div className="flex justify-center gap-7 ">

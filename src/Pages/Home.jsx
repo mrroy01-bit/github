@@ -7,7 +7,7 @@ function Home() {
   
   return (
     < > 
-<div id='Home'>
+  <div id='Home'>
       <Header  />
       <Welcome />
      </div>

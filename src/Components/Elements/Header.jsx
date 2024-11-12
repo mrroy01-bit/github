@@ -8,6 +8,9 @@ import { GoCodeReview } from "react-icons/go";
 import { GoIssueOpened } from "react-icons/go";
 import { GoCommentDiscussion } from "react-icons/go";
 import { GoCodeSquare } from "react-icons/go";
+import { FaSearch } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+
 
 
 function Header() {
@@ -36,9 +39,9 @@ function Header() {
                                     <div className='flex font-medium'>
                                         <SiGithubcopilot className='text-slate-500 text-4xl pt-3' />
                                         <span className='tracking-normal font-normal leading-normal me-menu'>
-                                        <a href="#" className="text-black font-semibold hover:text-gray-300 block mb-1 pl-3 text-base pb-1 leading-normal">GitHub Copilot</a>
-                                         <p className="text-gray-400 text-sm leading-normal pl-3">Write better code with Al</p>
-                                    </span>
+                                            <a href="#" className="text-black font-semibold hover:text-gray-300 block mb-1 pl-3 text-base pb-1 leading-normal">GitHub Copilot</a>
+                                            <p className="text-gray-400 text-sm leading-normal pl-3">Write better code with Al</p>
+                                        </span>
                                     </div>
                                 </li>
 
@@ -46,31 +49,31 @@ function Header() {
                                     <div className='flex font-medium'>
                                         <MdSecurity className='text-slate-500 text-4xl pt-3' />
                                         <span className='tracking-normal font-normal leading-normal me-menu'>
-                                        <a href="#" className="text-black hover:text-gray-300 font-semibold block mb-1 pl-3  text-base pb-1 leading-normal">Security</a>
-                                        <p className="text-gray-400 text-sm leading-normal pl-3">Find and fix vulnerabilities</p>
-                                     </span>
+                                            <a href="#" className="text-black hover:text-gray-300 font-semibold block mb-1 pl-3  text-base pb-1 leading-normal">Security</a>
+                                            <p className="text-gray-400 text-sm leading-normal pl-3">Find and fix vulnerabilities</p>
+                                        </span>
                                     </div>
                                 </li>
 
                                 <li className="Submenu py-2 ">
-                                <span className='flex font-medium'>
-                                <GoGitCompare className='text-slate-500 text-2xl' />
+                                    <span className='flex font-medium'>
+                                        <GoGitCompare className='text-slate-500 text-2xl' />
                                         <a href="#" className="text-black hover:text-gray-300 block mb-2 pl-3 font-semibold">Actions</a>
                                     </span>
-                                    <p  className="text-gray-400 text-sm">Automate any workflow</p>
+                                    <p className="text-gray-400 text-sm">Automate any workflow</p>
                                 </li>
 
                                 <li className="Submenu py-2">
-                                <span className='flex font-medium'>
-                                <GoCodespaces className='text-slate-500 text-2xl' />
+                                    <span className='flex font-medium'>
+                                        <GoCodespaces className='text-slate-500 text-2xl' />
                                         <a href="#" className="text-black hover:text-gray-300 block mb-2 pl-3">Codespaces</a>
                                     </span>
                                     <p className="text-gray-400 text-sm">Instant dev environments</p>
                                 </li>
 
                                 <li className="Submenu py-2">
-                                <span className='flex font-medium'>
-                                <GoIssueOpened className='text-slate-500 text-2xl'/>
+                                    <span className='flex font-medium'>
+                                        <GoIssueOpened className='text-slate-500 text-2xl' />
                                         <a href="#" className="text-black hover:text-gray-300 block mb-2 pl-3">Issues</a>
                                     </span>
                                     <p className="text-gray-400 text-sm">Plan and track work</p>
@@ -78,24 +81,24 @@ function Header() {
 
                                 <li className="Submenu py-2">
                                     <span className='flex font-medium'>
-                                    <GoCodeReview className='text-slate-500 text-2xl'/>
-                                    <a href="#" className="text-black hover:text-gray-300 block mb-2 pl-3">Code Review</a>
+                                        <GoCodeReview className='text-slate-500 text-2xl' />
+                                        <a href="#" className="text-black hover:text-gray-300 block mb-2 pl-3">Code Review</a>
                                     </span>
                                     <p className="text-gray-400 text-sm">Manage code changes</p>
                                 </li>
 
                                 <li className="Submenu py-2 ">
-                                <span className='flex font-medium'>
-                                <GoCommentDiscussion className='text-slate-500 text-2xl'/>
+                                    <span className='flex font-medium'>
+                                        <GoCommentDiscussion className='text-slate-500 text-2xl' />
                                         <a href="#" className="text-black hover:text-gray-300 block mb-2 pl-3">Discussions</a>
                                     </span>
                                     <p className="text-gray-400 text-sm">Collaborate outside of code</p>
                                 </li>
 
                                 <li className="Submenu py-2 ">
-                                <span className='flex font-medium'>
-                                    <GoCodeSquare className='text-slate-500 text-2xl'/>
-                                    <a href="#" className="text-black hover:text-gray-300 pl-3">Code Search</a>
+                                    <span className='flex font-medium'>
+                                        <GoCodeSquare className='text-slate-500 text-2xl' />
+                                        <a href="#" className="text-black hover:text-gray-300 pl-3">Code Search</a>
                                     </span>
                                     <p className='pt-3 text-gray-400 text-sm'>Find more ,search less</p>
                                 </li>
@@ -144,6 +147,19 @@ function Header() {
                     </li>
                 </ul>
             </nav>
+
+            <div className="login+search flex ml-[48vh] text-white gap-3 pt-3 ">
+                <button className='py-2 px-2 border border-slate-400 rounded bg-[#272E49]'>
+                    <FaSearch />
+                </button>
+                <Link to='/login' className="SinIn pl-5 pr-5 pt-1 text-[0.875rem] hover:text-slate-400 cursor-pointer">
+                    Sin in
+                </Link>
+                <Link to='/sinup'  className="SinUp border ml-1 pl-2 pr-2 pt-1 rounded text-[0.875rem] hover:text-slate-400 cursor-pointer">
+                    Sin Up
+                </Link>
+            </div>
+
         </header>
     )
 }
